@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import styles from '@/styles/Carousel.module.scss'
 
 const Carousel = ({
@@ -9,9 +9,9 @@ const Carousel = ({
 }) => {
     const [slide, setSlide] = useState(0);
     const [change, setChange] = useState(true);
-    const changeSlide = (k = 1) => {
+    const changeSlide = useCallback((k = 1) => {
         setSlide(slide => slide + k >= items.length ? 0 : (slide + k < 0 ? items.length - 1 : slide + k));
-    }
+    }, [items.length])
 
     useEffect(() => {
         if (!automatic) return;
@@ -21,7 +21,7 @@ const Carousel = ({
         }, changeTime);
 
         return () => {clearInterval(interval)};
-    }, [change]);
+    }, [change,automatic, changeSlide,changeTime]);
 
     const onNextClick = () => {
         changeSlide();

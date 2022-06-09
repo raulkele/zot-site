@@ -11,7 +11,7 @@ const MissionStatement = () => {
           A true, vendor-neutral, OCI image registry
         </li>
         <li>
-          Images stored in OCI image format, distribution specification on-the-wire, that's it!
+          Images stored in OCI image format, distribution specification on-the-wire, that&apos;s it!
         </li>
       </ul>
     </div>

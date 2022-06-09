@@ -18,7 +18,7 @@ const Ecosystem = () => {
             <a  target="_blank" rel="noopener noreferrer">cri-o</a>
             </Link> is a OCI-based Kubernetes container runtime interface.
         </li>
-        <li>Works with "docker://" transport which is the default.</li>
+        <li>Works with &quot;docker://&quot; transport which is the default.</li>
       </ul>
     </div>
   )
