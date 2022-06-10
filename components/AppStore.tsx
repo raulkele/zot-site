@@ -16,7 +16,7 @@ const AppStore = ({background, color, showPicture = false, title=defaultTitle, c
                     {children?? defaultText}
                 </div>
             </div>
-            {showPicture && <ExportedImage width={500} height={160} src={require('@/public/solutions.png')} alt="Cisco Solutions" />}
+            {showPicture && <ExportedImage width={500} height={160} src={'/solutions.png'} alt="Cisco Solutions" />}
         </div>
     )
 }

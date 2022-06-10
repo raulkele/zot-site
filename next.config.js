@@ -1,6 +1,8 @@
 module.exports = {
-    basePath: '/zot-site',
-    assetPrefix: '/zot-site',
+    // basePath: '/zot-site',
+    // assetPrefix: '/zot-site',
+    basePath: '',
+    assetPrefix: '',
     images: {
         loader: "custom",
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
