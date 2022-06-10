@@ -1,4 +1,6 @@
 module.exports = {
+    basePath: '/zot-site',
+    assetPrefix: '/zot-site',
     images: {
         loader: "custom",
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -12,9 +14,5 @@ module.exports = {
     env: {
         storePicturesInWEBP: true,
         generateAndUseBlurImages: true,
-    },
-    // enterprise
-    // personal
-    basePath: '/zot-site',
-    assetPrefix: '/zot-site',
-};
+    }
+}
