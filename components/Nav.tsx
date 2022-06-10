@@ -3,6 +3,7 @@ import Link from 'next/link'
 import HamburgerButton from '@/components/HamburgerButton'
 import Image from 'next/image';
 import styles from '@/styles/Nav.module.scss'
+import ExportedImage from 'next-image-export-optimizer';
 
 const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
     const [navClasses, setNavClasses] = useState([styles.nav]);
@@ -19,7 +20,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
         <nav className={navClasses.join(' ')}>
             <HamburgerButton visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
             <div className={styles.clogo}>
-                <Link href='/'><Image src={require('@/public/zot-logo.jpg')} alt="Cisco Logo" width={64} height={60} /></Link>
+                <Link href='/'><ExportedImage src={require('@/public/zot-logo.jpg')} alt="Cisco Logo" width={64} height={60} /></Link>
             </div>
             <div className={styles.list}>
                 <ul>
@@ -40,7 +41,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
                         <Link href='/develop'>Blog</Link>
                     </li>
                     <li>
-                        <Link href='/'><Image src={require('@/public/user-profile.png')} alt="User profile icon" width={30} height={30} /></Link>
+                        <Link href='/'><ExportedImage src={require('@/public/user-profile.png')} alt="User profile icon" width={30} height={30} /></Link>
                     </li>
                 </ul>
             </div>
