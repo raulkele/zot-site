@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export && next-image-export-optimizer "
   },
   "dependencies": {
     "image-trace-loader": "^1.0.2",
     "imagemin-svgo": "^9.0.0",
     "next": "^12.1.6",
+    "next-image-export-optimizer": "^0.10.1",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",

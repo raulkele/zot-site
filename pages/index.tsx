@@ -12,19 +12,20 @@ import Image from 'next/image'
 import styles from '@/styles/Layout.module.scss'
 import MissionStatement from '@/components/MissionStatement'
 import Ecosystem from '@/components/Ecosystem'
+import ExportedImage from 'next-image-export-optimizer'
 
 const CAROUSEL_ITEMS = [
   {
     caption: 'On-premise Deployment',
-    image: <Image src={require('@/public/nd.png')} alt="On-premise Deployment"/>
+    image: <ExportedImage src={require('@/public/nd.png')} alt="On-premise Deployment"/>
   },
   {
     caption: 'Built-in advanced features',
-    image: <Image src={require('@/public/ni.png')} alt="Built-in advanced features"/>
+    image: <ExportedImage src={require('@/public/ni.png')} alt="Built-in advanced features"/>
   },
   {
     caption: 'Minimal build',
-    image: <Image src={require('@/public/nso.png')} alt="Minimal build"/>
+    image: <ExportedImage src={require('@/public/nso.png')} alt="Minimal build"/>
   },
 ]
 
