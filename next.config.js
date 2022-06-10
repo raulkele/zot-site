@@ -1,8 +1,9 @@
+const repoNameURIPrefix =
+  process.env.NODE_ENV === 'production' ? '/zot-site' : '';
+
 module.exports = {
-    // basePath: '/zot-site',
-    // assetPrefix: '/zot-site',
-    basePath: '',
-    assetPrefix: '',
+    basePath: repoNameURIPrefix,
+    assetPrefix:repoNameURIPrefix,
     images: {
         loader: "custom",
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
