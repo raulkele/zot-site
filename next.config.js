@@ -15,6 +15,6 @@ module.exports = {
     },
     // enterprise
     // personal
-    basePath: '',
-    assetPrefix: '',
+    basePath: '/zot-site',
+    assetPrefix: '/zot-site',
 };
