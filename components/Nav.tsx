@@ -20,7 +20,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
         <nav className={navClasses.join(' ')}>
             <HamburgerButton visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
             <div className={styles.clogo}>
-                <Link href='/'><ExportedImage src={'/images/zot-logo.jpg'} alt="Zot Logo" width={64} height={60} /></Link>
+                <Link href='/'><ExportedImage src={'images/zot-logo.jpg'} alt="Zot Logo" width={64} height={60} /></Link>
             </div>
             <div className={styles.list}>
                 <ul>
@@ -31,8 +31,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
                         <Link href='/discover'>Design</Link>
                     </li>
                     <li>
-                        {/* TODO: DOCS WEBSITE LINK */}
-                        <Link href='#'>Docs</Link>
+                        <Link href='https://raulkele.github.io/project-zot-docs/'>Docs</Link>
                     </li>
                     <li>
                         <Link href='/develop'>Community</Link>
@@ -41,7 +40,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
                         <Link href='/develop'>Blog</Link>
                     </li>
                     <li>
-                        <Link href='/'><ExportedImage src={'/images/user-profile.png'} alt="User profile icon" width={30} height={30} /></Link>
+                        <Link href='/'><ExportedImage src={'images/user-profile.png'} alt="User profile icon" width={30} height={30} /></Link>
                     </li>
                 </ul>
             </div>

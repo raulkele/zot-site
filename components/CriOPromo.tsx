@@ -6,7 +6,7 @@ const CriOPromo = () => {
     return (
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '3rem', margin: '5rem 0', cursor: 'pointer'}}>
             <div style={{margin: '2rem 0', textAlign: 'center'}}>Cri-O</div>
-            <ExportedImage src={'/images/crio-logo.svg'} height={500} width={740} alt="Cri-O" />
+            <ExportedImage src={'images/crio-logo.svg'} height={500} width={740} alt="Cri-O" />
         </div>
     )
 }

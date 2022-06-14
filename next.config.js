@@ -1,5 +1,4 @@
 const repoNameURIPrefix = 
-    // '/zot-site';
   process.env.NODE_ENV === 'production' ? '/zot-site' : '';
 
 module.exports = {
