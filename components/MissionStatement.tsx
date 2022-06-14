@@ -2,7 +2,7 @@
 const MissionStatement = () => {
   return (
     <div>
-      <h3>Zot</h3>
+      <h3>zot</h3>
       <ul>
         <li>
           Our mission at Project Zot is simple

@@ -20,7 +20,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
         <nav className={navClasses.join(' ')}>
             <HamburgerButton visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
             <div className={styles.clogo}>
-                <Link href='/'><ExportedImage src={'images/zot-logo.jpg'} alt="Zot Logo" width={64} height={60} /></Link>
+                <Link href='/'><ExportedImage src={'images/zot-logo.jpg'} alt="zot Logo" width={64} height={60} /></Link>
             </div>
             <div className={styles.list}>
                 <ul>

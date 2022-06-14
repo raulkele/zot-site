@@ -57,7 +57,7 @@ export default function App() {
             <ZliPromo />
           </Section>
           <Section key={3} index={3} color={'white'} doubleColumn={true}>
-            <AppStore background={COLORS.PURPLE} color={'white'} title='Why Zot?'>             
+            <AppStore background={COLORS.PURPLE} color={'white'} title='Why zot?'>             
              <WhyZot/>
             </AppStore>
             <AppStore background={COLORS.LIGHTBLUE} color={'white'} title='Well Maintained Ecosystem'>

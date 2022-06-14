@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-const defaultTitle = 'Zot Registry';
+const defaultTitle = 'zot Registry';
 const defaultKeywords = 'zot, project-zot, images, registry, container';
-const defaultDescription = `Zot image registry`;
+const defaultDescription = `zot image registry`;
 
 const Meta = ({ title, keywords, description }) => {
     return (

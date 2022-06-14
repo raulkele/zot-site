@@ -1,5 +1,5 @@
-## Zot presentation website
-This is a proof-of-concept for the presentation website of [Project-Zot](https://github.com/project-zot/zot) built using NextJS.
+## zot presentation website
+This is a proof-of-concept for the presentation website of [Project-zot](https://github.com/project-zot/zot) built using NextJS.
 ## Getting Started
 
 First, run the development server:
