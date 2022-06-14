@@ -1,18 +1,15 @@
 import Section from '@/components/Section'
-import SomeComponent from '@/components/SomeComponent'
 import Carousel from '@/components/Carousel'
 import AppStore from '@/components/AppStore'
 import Community from '@/components/Community'
 import ZliPromo from '@/components/ZliPromo'
-import SkopeoPromo from '@/components/Skopeo'
-import CriOPromo from '@/components/CriOPromo'
 import WhyZot from '@/components/WhyZot'
-import Image from 'next/image'
 
 import styles from '@/styles/Layout.module.scss'
 import MissionStatement from '@/components/MissionStatement'
 import Ecosystem from '@/components/Ecosystem'
 import ExportedImage from 'next-image-export-optimizer'
+import ZotCard from '@/components/ZotCard'
 
 const CAROUSEL_ITEMS = [
   {
@@ -45,24 +42,27 @@ export default function App() {
       <div className={styles.container}>
         <main className={styles.main}>
           <Section key={0} index={0} color={'white'}>
-            <Carousel items={CAROUSEL_ITEMS} showDots={true} automatic={true}/>
+            <ZotCard/>
           </Section>
           <Section key={1} index={1} color={'white'} doubleColumn={true}>
             <AppStore background={COLORS.LIGHTBLUE} color={'white'} showPicture={true} title='Our Mission'>
               <MissionStatement/>
             </AppStore>
-            <Community background={COLORS.WHITE} color={'black'} showPicture={true}/>
-          </Section>
-          <Section key={2} index={2} color={'white'}>
-            <ZliPromo />
-          </Section>
-          <Section key={3} index={3} color={'white'} doubleColumn={true}>
-            <AppStore background={COLORS.PURPLE} color={'white'} title='Why zot?'>             
+            <AppStore background={COLORS.LIGHTBLUE} color={'white'} title='Why zot?'>             
              <WhyZot/>
             </AppStore>
+          </Section>
+          <Section key={2} index={2} color={'white'}>
+            <Carousel items={CAROUSEL_ITEMS} showDots={true} automatic={true}/>
+          </Section>
+          <Section key={3} index={3} color={'white'} doubleColumn={true}>
             <AppStore background={COLORS.LIGHTBLUE} color={'white'} title='Well Maintained Ecosystem'>
               <Ecosystem/>
-            </AppStore>             
+            </AppStore>  
+            <Community background={COLORS.WHITE} color={'black'} showPicture={true}/>           
+          </Section>
+          <Section key={4} index={4} color={'white'}>
+           <ZliPromo />
           </Section>
         </main>
       </div>
