@@ -1,5 +1,4 @@
-const repoNameURIPrefix =
-  process.env.NODE_ENV !== 'development' ? '/zot-site' : '';
+const repoNameURIPrefix = '/zot-site';
 
 module.exports = {
     basePath: repoNameURIPrefix,
