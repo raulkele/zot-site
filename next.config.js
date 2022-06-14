@@ -1,5 +1,5 @@
 const repoNameURIPrefix =
-  process.env.NODE_ENV === 'production' ? '/zot-site' : '';
+  process.env.NODE_ENV !== 'development' ? '/zot-site' : '';
 
 module.exports = {
     basePath: repoNameURIPrefix,

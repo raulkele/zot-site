@@ -17,15 +17,15 @@ import ExportedImage from 'next-image-export-optimizer'
 const CAROUSEL_ITEMS = [
   {
     caption: 'On-premise Deployment',
-    image: <ExportedImage src={'/c1.png'} width={600} height={388} alt="On-premise Deployment"/>
+    image: <ExportedImage src={'/c1.png'} width={600} height={338} alt="On-premise Deployment"/>
   },
   {
     caption: 'Built-in advanced features',
-    image: <ExportedImage src={'/c2.png'} width={600} height={388} alt="Built-in advanced features"/>
+    image: <ExportedImage src={'/c2.png'} width={600} height={338} alt="Built-in advanced features"/>
   },
   {
     caption: 'Minimal build',
-    image: <ExportedImage src={'/c3.png'} width={600} height={388} alt="Minimal build"/>
+    image: <ExportedImage src={'/c3.png'} width={600} height={338} alt="Minimal build"/>
   },
 ]
 
