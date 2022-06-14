@@ -60,8 +60,7 @@ export const MobileNav = ({ setVisibleMobileNav }) => {
                     <Link href='/discover'><a onClick={onMobileLinkClickHandler}>Design</a></Link>
                 </div>
                 <div className={styles.stackitem}>
-                    {/* TODO: ADD DOC LINK */}
-                    <Link href='#'><a onClick={onMobileLinkClickHandler}>Docs</a></Link>
+                    <Link href='https://raulkele.github.io/project-zot-docs/'><a onClick={onMobileLinkClickHandler}>Docs</a></Link>
                 </div>
                 <div className={styles.stackitem}>
                     <Link href='/develop'><a onClick={onMobileLinkClickHandler}>Community</a></Link>

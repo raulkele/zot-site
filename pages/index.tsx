@@ -64,10 +64,6 @@ export default function App() {
               <Ecosystem/>
             </AppStore>             
           </Section>
-          <Section key={4} index={4} color={'white'} doubleColumn={true}>
-            <SkopeoPromo />
-            <CriOPromo />
-          </Section>
         </main>
       </div>
     </>
