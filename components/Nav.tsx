@@ -25,7 +25,7 @@ const Nav = ({ visibleMobileNav, setVisibleMobileNav }) => {
             <div className={styles.list}>
                 <ul>
                     <li>
-                        <Link href='https://raulkele.github.io/project-zot-docs/'>Docs</Link>
+                        <Link href='https://zotregistry.io/docs-zot'>Docs</Link>
                     </li>
                 </ul>
             </div>
