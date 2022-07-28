@@ -3,7 +3,7 @@
 }
 
 @mixin sticky {
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 1;
 }
@@ -34,8 +34,17 @@
     justify-content: space-between;
 }
 
+@mixin x-left-right-even {
+    justify-content: space-evenly;
+}
+
 @mixin left-right-centered {
     @include x-left-right;
+    @include cross-centered;
+}
+
+@mixin left-right-centered-even {
+    @include x-left-right-even;
     @include cross-centered;
 }
 
