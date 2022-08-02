@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
-import styles from '@/styles/Nav.module.scss'
+import styles from '@/styles/Header.module.scss'
 import ExportedImage from 'next-image-export-optimizer';
 import SearchIcon from '@mui/icons-material/Search';
 import { InputBase, Stack } from '@mui/material';

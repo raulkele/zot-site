@@ -7,6 +7,7 @@
     min-width: 100vw;
     height: calc(100vh - calc(100vh - 100%));
     font-size: $h5-font-size;
+    z-index:5;
     @include flex-column;
 
     a {
@@ -55,6 +56,8 @@
     @include flex-row;
     @include xcross-centered;
     @include sticky;
+    // override z-index of sticky
+    z-index:2;
     @include unselectable;
 
     ul {
@@ -132,7 +135,6 @@
         @include flex-row;
         @include left-right-centered-even;
         width: 60%;
-        flex-grow: 1s;
         min-height: 100%;
     }
 
