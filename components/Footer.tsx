@@ -8,7 +8,6 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Social />
-            <ExportedImage src={'images/cisco.svg'} alt="Cisco Logo" width={80} height={30} />
             <Legal />
         </footer>
     )
