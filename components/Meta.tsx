@@ -12,6 +12,7 @@ const Meta = ({ title, keywords, description }) => {
             <meta name='description' content={description}></meta>
             <meta charSet='utf-8' />
             <link rel='icon' href='/favicon.ico' />
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
             <title>{defaultTitle === title ? defaultTitle : `${defaultTitle} | ${title}`}</title>
         </Head>
     )

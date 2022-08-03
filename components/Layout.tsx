@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Meta from './Meta'
-import Nav, { MobileNav } from './Nav'
+import Header, { MobileNav } from './Header'
 import Footer from './Footer'
 import styles from '@/styles/Layout.module.scss'
 
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Meta title={title} />
-            <Nav visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
+            <Header visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
             <div className={styles.container}>
                 <main className={styles.main}>
                     {visibleMobileNav ? <MobileNav setVisibleMobileNav={setVisibleMobileNav} /> : children}
