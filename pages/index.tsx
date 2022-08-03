@@ -10,6 +10,8 @@ import MissionStatement from '@/components/MissionStatement'
 import Ecosystem from '@/components/Ecosystem'
 import ExportedImage from 'next-image-export-optimizer'
 import ZotCard from '@/components/ZotCard'
+import HeroSection from '@/components/HeroSection'
+import ProductSection from '@/components/ProductSection'
 
 const CAROUSEL_ITEMS = [
   {
@@ -41,8 +43,8 @@ export default function App() {
     <>
       <div className={styles.container}>
         <main className={styles.main}>
-          <Section key={0} index={0} color={'white'}>
-            <ZotCard/>
+          <Section key={0} index={0} color={'primary-gradient'}>
+            <HeroSection/>
           </Section>
           <Section key={1} index={1} color={'white'} doubleColumn={true}>
             <AppStore background={COLORS.LIGHTBLUE} color={'white'} showPicture={true} title='Our Mission'>

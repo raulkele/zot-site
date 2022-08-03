@@ -1,13 +1,18 @@
 // box-variant creates the main style for a colored section used on the site
 @mixin box-variant($parent, $color-name, $color-value) {
     $text-color: color-yiq($color-value);
-    $link-color: mix($secondary, $text-color, lightness($color-value));
+    @if type-of($color-value) == color {
+        $link-color: mix($secondary, $text-color, lightness($color-value));
+    } @else {
+        $link-color: $secondary;
+    }
+
     $link-hover-color: rgba($link-color, 0.5) !default;
 
     #{$parent} {
         &--#{$color-name} {
             color: $text-color;
-            background-color: #{$color-value};
+            background: #{$color-value};
         }
     }
 

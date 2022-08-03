@@ -9,6 +9,7 @@
 
 $primary: #A53692 !default;
 $primary-light: lighten($primary, 75%) !default;
+$primary-gradient: linear-gradient(149.91deg, #7a4c75 14.36%, #9a6094 116.3%) !default;
 $secondary: #fff !default;
 $success: #3772FF !default;
 $info: #C0E0DE !default;
@@ -22,6 +23,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary":    $primary,
+    "primary-gradient": $primary-gradient,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
