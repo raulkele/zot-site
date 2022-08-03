@@ -1,21 +1,15 @@
-import Link from 'next/link'
 import styles from '@/styles/Layout.module.scss'
+import { Button } from '@mui/material'
 
 const Legal = () => {
     return (
         <div className={styles.legal}>
             <ul>
                 <li>
-                    <Link href='/'>Terms &amp; conditions</Link>
+                    <Button variant="text" disableRipple className={styles.legalButton}>Terms and conditions</Button>
                 </li>
                 <li>
-                    <Link href='/discover'>Privacy statement</Link>
-                </li>
-                <li>
-                    <Link href='/docs'>Cookies</Link>
-                </li>
-                <li>
-                    <Link href='/docs'>Trademarks</Link>
+                    <Button  variant="text" disableRipple className={styles.legalButton}>Privacy Policy</Button>
                 </li>
             </ul>
         </div>

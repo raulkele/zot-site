@@ -4,7 +4,6 @@ import styles from "@/styles/Layout.module.scss";
 import HeroSection from "@/components/HeroSection";
 import ProductSection from "@/components/ProductSection";
 
-
 export default function App() {
   return (
     <>

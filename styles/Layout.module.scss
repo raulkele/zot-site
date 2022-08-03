@@ -24,7 +24,7 @@
   width: 100%;
   min-height: 15rem;
   border-top: 1px solid #eaeaea;
-  background: $primary;
+  background: $secondary;
   @include flex-column;
   @include xcross-centered;
 
@@ -36,7 +36,7 @@
 
   @media only screen and (max-width: 800px) {
     .legal ul {
-        @include flex-column;
+      @include flex-column;
     }
   }
 
@@ -44,11 +44,27 @@
     margin: 5px 10px;
     cursor: ponter;
   }
+
+  .legalButton {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-align: center;
+
+    color: $primary;
+
+  }
+
+  .legalButton:hover {
+    background: transparent;
+  }
 }
 
 .footer a {
   flex-grow: 1;
-  color: $link-light-color;
+  color: $primary;
   font-weight: $font-weight-medium;
   @include flex-column;
   @include xcross-centered;
@@ -66,4 +82,3 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
-

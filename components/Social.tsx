@@ -7,28 +7,18 @@ const Social = () => {
         <div>
             <ul>
                 <li>
+                    <Link href='https://slack.com/'>
+                        <a><ExportedImage src={'images/slack.svg'} alt="Slack Logo" width={40} height={40} /></a>
+                    </Link>
+                </li>
+                <li>
                     <Link href='https://twitter.com/Cisco/'>
-                        <a><ExportedImage src={'images/twitter.svg'} alt="Twitter Logo" width={40} height={20} /></a>
+                        <a><ExportedImage src={'images/twitter_new.svg'} alt="Twitter Logo" width={49} height={40} /></a>
                     </Link>
                 </li>
                 <li>
-                    <Link href='https://www.facebook.com/Cisco/'>
-                        <a><ExportedImage src={'images/facebook.svg'} alt="Facebook Logo" width={40} height={20} /></a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='https://www.instagram.com/cisco/'>
-                        <a><ExportedImage src={'images/instagram.svg'} alt="Instagram Logo" width={40} height={20} /></a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='https://www.linkedin.com/company/cisco'>
-                        <a><ExportedImage src={'images/linkedin.svg'} alt="LinkedIn Logo" width={40} height={20} /></a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='https://www.youtube.com/user/cisco'>
-                        <a><ExportedImage src={'images/youtube.svg'} alt="YouTube Logo" width={40} height={20} /></a>
+                    <Link href='https://github.com/'>
+                        <a><ExportedImage src={'images/github.svg'} alt="Github Logo" width={41} height={40} /></a>
                     </Link>
                 </li>
             </ul>
