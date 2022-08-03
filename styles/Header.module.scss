@@ -117,16 +117,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
-        width: 100px;
-        height: 42px;
         color: $primary;
         background-color: $secondary;
         border: 1px solid $primary;
         border-radius: 66px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
         font-size: 15px;
         line-height: 26px;
-        font-weight: 500;
         letter-spacing: 0.46px;
         text-transform: uppercase;
     }
