@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "@/styles/Header.module.scss";
 import ExportedImage from "next-image-export-optimizer";
 import SearchIcon from "@mui/icons-material/Search";
-import { AppBar, Avatar, Button, InputBase, Stack, Toolbar } from "@mui/material";
+import { Button, InputBase, Stack } from "@mui/material";
 
 const Header = ({ visibleMobileNav, setVisibleMobileNav }) => {
   const [navClasses, setNavClasses] = useState([styles.nav]);

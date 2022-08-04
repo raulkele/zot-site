@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import ExportedImage from 'next-image-export-optimizer'
 
 const Social = () => {
