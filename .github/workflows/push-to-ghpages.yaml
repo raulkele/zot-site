@@ -1,8 +1,10 @@
 on:
-  push:
-    branches:
-      - 'main'
-name: build-and-push-ghpages
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+name: build-and-push-githubpages
 
 jobs:
   build-and-push:
@@ -15,24 +17,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
+          cache: 'npm'
           node-version: 16
 
       - name: Set up Next.js
         run: |
           npm install
-
-      - name: Cache Next.js
-        uses: actions/cache@v2
-        with:
-          # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
-          path: |
-            ~/.npm
-            ${{ github.workspace }}/.next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Build site
         run: |
@@ -44,8 +34,8 @@ jobs:
       - name: Push output to github-pages branch
         uses: s0/git-publish-subdir-action@develop
         env:
-          REPO: self
-          BRANCH: github-pages
+          REPO: git@github.com:project-zot/project-zot.github.io
+          BRANCH: main
           FOLDER: out
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           CLEAR_GLOBS_FILE: "preserve-docs.txt"
